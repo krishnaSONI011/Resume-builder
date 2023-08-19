@@ -6,3 +6,6 @@
 h1,h2,h3,h4,h5{
     font-family: 'Sora', sans-serif;
 }
+.input{
+    @apply bg-slate-50 p-2 rounded focus:outline-indigo-500;
+}
