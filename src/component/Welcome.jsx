@@ -19,7 +19,7 @@ export default function Welcome() {
             {/* with button */}
 
             <div className='flex justify-center items-center w-6/12'>
-              <Link to="/choose-template" > <button className='py-2 px-3 bg-indigo-600 text-xl text-white rounded'>Create Resume</button>
+              <Link to="/dashboard " > <button className='py-2 px-3 bg-indigo-600 text-xl text-white rounded'>Create Resume</button>
               </Link></div>
     </div>
   )

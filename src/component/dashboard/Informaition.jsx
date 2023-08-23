@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { LuArrowDown,LuArrowUp } from "react-icons/lu";
 
-export default function Informaition() {
+export default function Informaition(props) {
     let [display,setDisply] = useState("hidden")
     let [arro,setArro] = useState(<LuArrowDown/>)
 
@@ -46,6 +46,7 @@ export default function Informaition() {
                       name="first-name"
                       className="input"
                       placeholder="e.g krishna"
+                      onChange={(e)=>props.setname(e.target.value)}
                     />
                   </div>
                   <div className="w-1/2">
@@ -55,6 +56,8 @@ export default function Informaition() {
                       name="last-name"
                       className="input"
                       placeholder="e.g Soni"
+                      onChange={(e)=>props.setlastname(e.target.value)}
+                      
                     />
                   </div>
                 </div>
@@ -64,7 +67,9 @@ export default function Informaition() {
                     <label htmlFor="">Email</label>
                   
                   </div>
-                  <input type="text" name="" id="" className="input w-full mr-4" placeholder="e.g krishna@gmail.com " />
+                  <input type="text" name="" id="" className="input w-full mr-4" placeholder="e.g krishna@gmail.com " 
+                  onChange={(e)=>props.setemail(e.target.value)}
+                  />
                 </div>
               </div>
               {/* email section */}
@@ -73,24 +78,34 @@ export default function Informaition() {
              {/* second section */}
              <div className=" p-2 pr-10 pl-5">
                 <label htmlFor="">Headline</label><br/>
-                <input type="text" className="input w-full mb-4" placeholder="e.g Frontend Developer"/>
+                <input type="text" className="input w-full mb-4" placeholder="e.g Frontend Developer"
+                onChange={(e)=>props.setheadline(e.target.value)}
+                />
                 <label htmlFor="">Phone Number</label><br/>
-                <input type="number" className="input w-full mb-4" placeholder="e.g +91-9876543210"/>
+                <input type="number" className="input w-full mb-4" placeholder="e.g +91-9876543210"
+                onChange={(e)=>props.setphone(e.target.value)}
+                />
 
              </div>
              {/* second section */}
              {/* third section */}
              <div className="p-2 pr-10 pl-5">
              <label htmlFor="">Address</label><br/>
-                <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"/>
+                <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"
+                 onChange={(e)=>props.setaddress(e.target.value)}
+                />
                 <div className="flex">
                     <div className="w-6/12 mr-3">
                     <label htmlFor="">Post Code</label><br/>
-                    <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"/>
+                    <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"
+                     onChange={(e)=>props.setpostcode(e.target.value)}
+                    />
                     </div>
                     <div className="w-6/12">
                     <label htmlFor="">City</label><br/>
-                    <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"/>
+                    <input type="text" className="input w-full mb-4" placeholder="e.g New Delhi"
+                     onChange={(e)=>props.setcity(e.target.value)}
+                    />
                     </div>
                 </div>
              </div>
