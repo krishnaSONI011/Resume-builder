@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
 
 h1,h2,h3,h4,h5{
     font-family: 'Sora', sans-serif;
 }
 .input{
     @apply bg-slate-50 p-2 rounded focus:outline-indigo-500;
+}
+.font-1{
+    font-family: 'Dancing Script', cursive;
+
+}
+.font-2{
+    font-family: 'Nunito Sans', sans-serif;
 }
